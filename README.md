@@ -11,7 +11,7 @@ How to get started with ameeConnect
 
 * Sign up for API credentials at my.amee.com
 * Find the model for the activity you want to measure (i.e. transport, electricty, manufacturing processes) on [discover.amee.com](http://discover.amee.com)
-* Read over the [quickstart](sections/quickstartmd#specifying-api-versions) and docs to see how to make requests for the model you're using.
+* Read over the [quickstart](/AMEE/connect-api/blob/sections/quickstartmd#specifying-api-versions) and docs to see how to make requests for the model you're using.
 
 How to get help
 ---------------
@@ -25,92 +25,92 @@ Table of Contents
 
 *Table of Contents**
 
-[Introduction](sections/introduction.md)
+[Introduction](/AMEE/connect-api/blob/sections/introduction.md)
 
-[About This Manual](sections/introduction.md#about)
+[About This Manual](/AMEE/connect-api/blob/sections/introduction.md#about)
 
-[Before You Start](sections/introduction.md#before-you-start)
+[Before You Start](/AMEE/connect-api/blob/sections/introduction.md#before-you-start)
 
-[API Versions](sections/introduction.md#api-versions)
+[API Versions](/AMEE/connect-api/blob/sections/introduction.md#api-versions)
 
-[Quick Start](sections/quickstart.md)
+[Quick Start](/AMEE/connect-api/blob/sections/quickstart.md)
 
-[Getting Started](sections/quickstart.md#getting-started)
+[Getting Started](/AMEE/connect-api/blob/sections/quickstart.md#getting-started)
 
-[Choose Your Model](sections/quickstart.md#quick-choose-data-item)
+[Choose Your Model](/AMEE/connect-api/blob/sections/quickstart.md#quick-choose-data-item)
 
-[Do the Calculation](sections/quickstart.md#quick-do-calculation)
+[Do the Calculation](/AMEE/connect-api/blob/sections/quickstart.md#quick-do-calculation)
 
-[Get Emission Factors](sections/data.md)
+[Get Emission Factors](/AMEE/connect-api/blob/sections/data.md)
 
-[Models and Contexts](sections/data.md#models)
+[Models and Contexts](/AMEE/connect-api/blob/sections/data.md#models)
 
-[Using AMEEdiscover](sections/data.md#ameediscover)
+[Using AMEEdiscover](/AMEE/connect-api/blob/sections/data.md#ameediscover)
 
-[Fetching Emission Factors](sections/data.md#get-data-items)
+[Fetching Emission Factors](/AMEE/connect-api/blob/sections/data.md#get-data-items)
 
-[Perform Calculations](sections/calculations.md)
+[Perform Calculations](/AMEE/connect-api/blob/sections/calculations.md)
 
-[Doing a Calculation](sections/calculations.md#doing-calculations)
+[Doing a Calculation](/AMEE/connect-api/blob/sections/calculations.md#doing-calculations)
 
-[Getting Results](sections/calculations.md#getting-results)
+[Getting Results](/AMEE/connect-api/blob/sections/calculations.md#getting-results)
 
-[Store Data](sections/profiles.md)
+[Store Data](/AMEE/connect-api/blob/sections/profiles.md)
 
-[Using AMEEconnect to Store Data](sections/profiles.md#store-data)
+[Using AMEEconnect to Store Data](/AMEE/connect-api/blob/sections/profiles.md#store-data)
 
-[Creating a Profile](sections/profiles.md#create-profile)
+[Creating a Profile](/AMEE/connect-api/blob/sections/profiles.md#create-profile)
 
-[Storing Inputs](sections/profiles.md#create-profile-item)
+[Storing Inputs](/AMEE/connect-api/blob/sections/profiles.md#create-profile-item)
 
-[Fetching Return Values](sections/profiles.md#retrieve-items)
+[Fetching Return Values](/AMEE/connect-api/blob/sections/profiles.md#retrieve-items)
 
-[List Stored Profile Items](sections/profiles.md#list-items)
+[List Stored Profile Items](/AMEE/connect-api/blob/sections/profiles.md#list-items)
 
-[Building Time Series](sections/profiles.md#build-time-series)
+[Building Time Series](/AMEE/connect-api/blob/sections/profiles.md#build-time-series)
 
-[Naming Profile Items](sections/profiles.md#naming-items)
+[Naming Profile Items](/AMEE/connect-api/blob/sections/profiles.md#naming-items)
 
-[Time Series Queries](sections/profiles.md#time-series-queries)
+[Time Series Queries](/AMEE/connect-api/blob/sections/profiles.md#time-series-queries)
 
-[Advanced Options](sections/advanced.md)
+[Advanced Options](/AMEE/connect-api/blob/sections/advanced.md)
 
-[Specifying API Version](sections/advanced.md#specifying-api-versions)
+[Specifying API Version](/AMEE/connect-api/blob/sections/advanced.md#specifying-api-versions)
 
-[Units](sections/advanced.md#units)
+[Units](/AMEE/connect-api/blob/sections/advanced.md#units)
 
-[Matrix Parameters](sections/advanced.md#matrix-parameters)
+[Matrix Parameters](/AMEE/connect-api/blob/sections/advanced.md#matrix-parameters)
 
-[Search](sections/advanced.md#search)
+[Search](/AMEE/connect-api/blob/sections/advanced.md#search)
 
-[Authority](sections/advanced.md#authority)
+[Authority](/AMEE/connect-api/blob/sections/advanced.md#authority)
 
-[Paging](sections/advanced.md#paging)
+[Paging](/AMEE/connect-api/blob/sections/advanced.md#paging)
 
-[Interactive Context Selection](sections/advanced.md#interactive-drilldowns)
+[Interactive Context Selection](/AMEE/connect-api/blob/sections/advanced.md#interactive-drilldowns)
 
-[AMEEconnect API reference](sections/reference.md)
+[AMEEconnect API reference](/AMEE/connect-api/blob/sections/reference.md)
 
-[Models](sections/reference.md#data-category-reference)
+[Models](/AMEE/connect-api/blob/sections/reference.md#data-category-reference)
 
-[Contexts](sections/reference.md#data-item-reference)
+[Contexts](/AMEE/connect-api/blob/sections/reference.md#data-item-reference)
 
-[Emission Factors](sections/reference.md#data-item-value-reference)
+[Emission Factors](/AMEE/connect-api/blob/sections/reference.md#data-item-value-reference)
 
-[Profiles](sections/reference.md#profile-reference)
+[Profiles](/AMEE/connect-api/blob/sections/reference.md#profile-reference)
 
-[Profile Items](sections/reference.md#profile-item-reference)
+[Profile Items](/AMEE/connect-api/blob/sections/reference.md#profile-item-reference)
 
-[Batch Operations](sections/reference.md#batch-operations-reference)
+[Batch Operations](/AMEE/connect-api/blob/sections/reference.md#batch-operations-reference)
 
-[Search](sections/reference.md#search-reference)
+[Search](/AMEE/connect-api/blob/sections/reference.md#search-reference)
 
-[Authentication](sections/reference.md#auth-reference)
+[Authentication](/AMEE/connect-api/blob/sections/reference.md#auth-reference)
 
-[UIDs](sections/reference.md#uid-reference)
+[UIDs](/AMEE/connect-api/blob/sections/reference.md#uid-reference)
 
-[Date and Time Representation](sections/reference.md#date-reference)
+[Date and Time Representation](/AMEE/connect-api/blob/sections/reference.md#date-reference)
 
-[References](sections/bib.md)
+[References](/AMEE/connect-api/blob/sections/bib.md)
 
 
