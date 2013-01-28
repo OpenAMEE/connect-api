@@ -9,108 +9,77 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unpor
 How to get started with ameeConnect
 -----------------------------------
 
-* Sign up for API credentials at my.amee.com
+* Sign up for API credentials at [my.amee.com](http://my.amee.com)
 * Find the model for the activity you want to measure (i.e. transport, electricty, manufacturing processes) on [discover.amee.com](http://discover.amee.com)
 * Read over the [quickstart](/AMEE/connect-api/blob/master/sections//quickstartmd#specifying-api-versions) and docs to see how to make requests for the model you're using.
 
 How to get help
 ---------------
 
-If there's anything that isn't clear about the API, the best place to go is [help.amee.com](http://help.amee.com) - and check the knowledge base there, or ask in the community forums. 
+1. If there's anything that isn't clear about the API, the first place after the docs to go is the knowledge base there [help.amee.com](http://help.amee.com).
 
-Failing that , you can always send a tweet to [@ameedev](http://twitter.com/ameedev)
+2. The next best place is either to ask on the [developer mailing list ](https://groups.google.com/forum/?fromgroups#!forum/amee-developer) if you have a question you would happily share publicly. 
+
+3. Finally the question is more suited to private conversation, you can contact our support team directly at help@amee.com.
 
 Table of Contents
 -----------------
 
-*Table of Contents**
+### [Introduction](/AMEE/connect-api/blob/master/sections//introduction.md)
 
-[Introduction](/AMEE/connect-api/blob/master/sections//introduction.md)
+* [About This Manual](/AMEE/connect-api/blob/master/sections//introduction.md#about)
+* [Before You Start](/AMEE/connect-api/blob/master/sections//introduction.md#before-you-start)
+* [API Versions](/AMEE/connect-api/blob/master/sections//introduction.md#api-versions)
 
-[About This Manual](/AMEE/connect-api/blob/master/sections//introduction.md#about)
+### [Quick Start](/AMEE/connect-api/blob/master/sections//quickstart.md)
 
-[Before You Start](/AMEE/connect-api/blob/master/sections//introduction.md#before-you-start)
+* [Getting Started](/AMEE/connect-api/blob/master/sections//quickstart.md#getting-started)
+* [Choose Your Model](/AMEE/connect-api/blob/master/sections//quickstart.md#quick-choose-data-item)
+* [Do the Calculation](/AMEE/connect-api/blob/master/sections//quickstart.md#quick-do-calculation)
 
-[API Versions](/AMEE/connect-api/blob/master/sections//introduction.md#api-versions)
+### [Get Emission Factors](/AMEE/connect-api/blob/master/sections//data.md)
 
-[Quick Start](/AMEE/connect-api/blob/master/sections//quickstart.md)
+* [Models and Contexts](/AMEE/connect-api/blob/master/sections//data.md#models)
+* [Using AMEEdiscover](/AMEE/connect-api/blob/master/sections//data.md#ameediscover)
+* [Fetching Emission Factors](/AMEE/connect-api/blob/master/sections//data.md#get-data-items)
 
-[Getting Started](/AMEE/connect-api/blob/master/sections//quickstart.md#getting-started)
+### [Perform Calculations](/AMEE/connect-api/blob/master/sections//calculations.md)
 
-[Choose Your Model](/AMEE/connect-api/blob/master/sections//quickstart.md#quick-choose-data-item)
+* [Doing a Calculation](/AMEE/connect-api/blob/master/sections//calculations.md#doing-calculations)
+* [Getting Results](/AMEE/connect-api/blob/master/sections//calculations.md#getting-results)
+* [Store Data](/AMEE/connect-api/blob/master/sections//profiles.md)
+* [Using AMEEconnect to Store Data](/AMEE/connect-api/blob/master/sections//profiles.md#store-data)
+* [Creating a Profile](/AMEE/connect-api/blob/master/sections//profiles.md#create-profile)
+* [Storing Inputs](/AMEE/connect-api/blob/master/sections//profiles.md#create-profile-item)
+* [Fetching Return Values](/AMEE/connect-api/blob/master/sections//profiles.md#retrieve-items)
+* [List Stored Profile Items](/AMEE/connect-api/blob/master/sections//profiles.md#list-items)
+* [Building Time Series](/AMEE/connect-api/blob/master/sections//profiles.md#build-time-series)
+* [Naming Profile Items](/AMEE/connect-api/blob/master/sections//profiles.md#naming-items)
+* [Time Series Queries](/AMEE/connect-api/blob/master/sections//profiles.md#time-series-queries)
 
-[Do the Calculation](/AMEE/connect-api/blob/master/sections//quickstart.md#quick-do-calculation)
+### [Advanced Options](/AMEE/connect-api/blob/master/sections//advanced.md)
 
-[Get Emission Factors](/AMEE/connect-api/blob/master/sections//data.md)
+* [Specifying API Version](/AMEE/connect-api/blob/master/sections//advanced.md#specifying-api-versions)
+* [Units](/AMEE/connect-api/blob/master/sections//advanced.md#units)
+* [Matrix Parameters](/AMEE/connect-api/blob/master/sections//advanced.md#matrix-parameters)
+* [Search](/AMEE/connect-api/blob/master/sections//advanced.md#search)
+* [Authority](/AMEE/connect-api/blob/master/sections//advanced.md#authority)
+* [Paging](/AMEE/connect-api/blob/master/sections//advanced.md#paging)
+* [Interactive Context Selection](/AMEE/connect-api/blob/master/sections//advanced.md#interactive-drilldowns)
 
-[Models and Contexts](/AMEE/connect-api/blob/master/sections//data.md#models)
+### [AMEEconnect API reference](/AMEE/connect-api/blob/master/sections//reference.md)
+* [Models](/AMEE/connect-api/blob/master/sections//reference.md#data-category-reference)
+* [Contexts](/AMEE/connect-api/blob/master/sections//reference.md#data-item-reference)
+* [Emission Factors](/AMEE/connect-api/blob/master/sections//reference.md#data-item-value-reference)
+* [Profiles](/AMEE/connect-api/blob/master/sections//reference.md#profile-reference)
+* [Profile Items](/AMEE/connect-api/blob/master/sections//reference.md#profile-item-reference)
+* [Batch Operations](/AMEE/connect-api/blob/master/sections//reference.md#batch-operations-reference)
+* [Search](/AMEE/connect-api/blob/master/sections//reference.md#search-reference)
+* [Authentication](/AMEE/connect-api/blob/master/sections//reference.md#auth-reference)
+* [UIDs](/AMEE/connect-api/blob/master/sections//reference.md#uid-reference)
+* [Date and Time Representation](/AMEE/connect-api/blob/master/sections//reference.md#date-reference)
 
-[Using AMEEdiscover](/AMEE/connect-api/blob/master/sections//data.md#ameediscover)
+### [References](/AMEE/connect-api/blob/master/sections//bib.md)
 
-[Fetching Emission Factors](/AMEE/connect-api/blob/master/sections//data.md#get-data-items)
-
-[Perform Calculations](/AMEE/connect-api/blob/master/sections//calculations.md)
-
-[Doing a Calculation](/AMEE/connect-api/blob/master/sections//calculations.md#doing-calculations)
-
-[Getting Results](/AMEE/connect-api/blob/master/sections//calculations.md#getting-results)
-
-[Store Data](/AMEE/connect-api/blob/master/sections//profiles.md)
-
-[Using AMEEconnect to Store Data](/AMEE/connect-api/blob/master/sections//profiles.md#store-data)
-
-[Creating a Profile](/AMEE/connect-api/blob/master/sections//profiles.md#create-profile)
-
-[Storing Inputs](/AMEE/connect-api/blob/master/sections//profiles.md#create-profile-item)
-
-[Fetching Return Values](/AMEE/connect-api/blob/master/sections//profiles.md#retrieve-items)
-
-[List Stored Profile Items](/AMEE/connect-api/blob/master/sections//profiles.md#list-items)
-
-[Building Time Series](/AMEE/connect-api/blob/master/sections//profiles.md#build-time-series)
-
-[Naming Profile Items](/AMEE/connect-api/blob/master/sections//profiles.md#naming-items)
-
-[Time Series Queries](/AMEE/connect-api/blob/master/sections//profiles.md#time-series-queries)
-
-[Advanced Options](/AMEE/connect-api/blob/master/sections//advanced.md)
-
-[Specifying API Version](/AMEE/connect-api/blob/master/sections//advanced.md#specifying-api-versions)
-
-[Units](/AMEE/connect-api/blob/master/sections//advanced.md#units)
-
-[Matrix Parameters](/AMEE/connect-api/blob/master/sections//advanced.md#matrix-parameters)
-
-[Search](/AMEE/connect-api/blob/master/sections//advanced.md#search)
-
-[Authority](/AMEE/connect-api/blob/master/sections//advanced.md#authority)
-
-[Paging](/AMEE/connect-api/blob/master/sections//advanced.md#paging)
-
-[Interactive Context Selection](/AMEE/connect-api/blob/master/sections//advanced.md#interactive-drilldowns)
-
-[AMEEconnect API reference](/AMEE/connect-api/blob/master/sections//reference.md)
-
-[Models](/AMEE/connect-api/blob/master/sections//reference.md#data-category-reference)
-
-[Contexts](/AMEE/connect-api/blob/master/sections//reference.md#data-item-reference)
-
-[Emission Factors](/AMEE/connect-api/blob/master/sections//reference.md#data-item-value-reference)
-
-[Profiles](/AMEE/connect-api/blob/master/sections//reference.md#profile-reference)
-
-[Profile Items](/AMEE/connect-api/blob/master/sections//reference.md#profile-item-reference)
-
-[Batch Operations](/AMEE/connect-api/blob/master/sections//reference.md#batch-operations-reference)
-
-[Search](/AMEE/connect-api/blob/master/sections//reference.md#search-reference)
-
-[Authentication](/AMEE/connect-api/blob/master/sections//reference.md#auth-reference)
-
-[UIDs](/AMEE/connect-api/blob/master/sections//reference.md#uid-reference)
-
-[Date and Time Representation](/AMEE/connect-api/blob/master/sections//reference.md#date-reference)
-
-[References](/AMEE/connect-api/blob/master/sections//bib.md)
-
+### [Example Apps and Libraries](/AMEE/connect-api/blob/master/sections//apps-and-libraries.md)
 
