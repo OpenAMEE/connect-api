@@ -101,59 +101,53 @@ status |The current status of the model. Normally this will be `ACTIVE`. | `audi
 Fetches a list of models matching specified criteria. The list is sorted
 by relevance, or by wikiName if no query parameters are supplied.
 
-  -------------------------- ---------------------------------------------------------------------------------------------
-  URL                        `https://api-stage.amee.com/3.6/categories[;{matrix_parameters}]?{query_parameters}`
-  HTTP Method                `GET`
-  Successful Response Code   `200 OK`
-  -------------------------- ---------------------------------------------------------------------------------------------
+
+| | |
+|-|-|
+|URL                        | `https://api-stage.amee.com/3.6/categories[;{matrix_parameters}]?{query_parameters}`|
+|HTTP Method                |`GET`|
+|Successful Response Code   |`200 OK`|
 
 #### Query Parameters
 
 The model list resource provides a number of parameters for searching
-and filtering. These can be specified as simple strings, in which case
-an exact match is required, or as more complex lucene query expressions.
-See [the section called “Search”](advanced.md#search "Search") for more
-details.
+and filtering. These can be specified as simple strings, in which case an exact match is required, or as more complex lucene query expressions.
+See [the section called “Search”](advanced.md#search "Search") for more details.
 
-  Query Parameter               Description                                                                                                                                                      Required?
-  ----------------------------- ---------------------------------------------------------------------------------------------------------------------------------------------------------------- -----------
-  `wikiName`             Match results by wikiName.                                                                                                                                       ✗
-  `wikiDoc`              Match results by wikiDoc. Normally you'll want to use a substring search here.                                                                                   ✗
-  `provenance`           Match results by provenance; standards body name, for instance.                                                                                                  ✗
-  `authority`            Match results by authority; Valid values are `enterprise`, `recommended`, `verified`, or `unverified`.                               ✗
-  `itemDefinitionUid`    List models that use the specified item definition (by UID).                                                                                                     ✗
-  `itemDefinitionName`   List models that use the specified item definition (by name).                                                                                                    ✗
-  `tags`                 A comma-separated list of tags that returned models should have. Can also be a lucene query expression.                                                          ✗
-  `excTags`              A comma-separated list of tags that returned models should *not* have. Can also be a lucene query expression.                                                    ✗
-  `resultStart`          Zero-based index of the first result that should be returned. See [the section called “Paging”](advanced.md#paging "Paging"). Defaults to 0 if not specified.   ✗
-  `resultLimit`          Specifies the number of results to return in a single page. See [the section called “Paging”](advanced.md#paging "Paging"). Defaults to 50 if not specified.    ✗
+| Query Parameter    |Description| Required?| 
+|-------------------|-----------|-----------|
+|`wikiName`          | Match results by wikiName. |✗ |
+|`wikiDoc`           | Match results by wikiDoc. Normally you'll want to use a substring search here. | ✗ |
+|`provenance`        | Match results by provenance; standards body name, for instance. | ✗ |
+|`authority`         | Match results by authority; Valid values are |`enterprise`, `recommended`, `verified`, or `unverified`.| ✗|
+|`itemDefinitionUid` | List models that use the specified item definition (by UID). | ✗|
+|`itemDefinitionName`| List models that use the specified item definition (by name).|✗|
+|`tags`              | A comma-separated list of tags that returned models should have. Can also be a lucene query expression.| ✗|
+|`excTags`           |  A comma-separated list of tags that returned models should *not* have. Can also be a lucene query expression.| ✗|
+|`resultStart`       | Zero-based index of the first result that should be returned. See [the section called “Paging”](advanced.md#paging "Paging"). Defaults to 0 if not specified. | ✗ |
+|`resultLimit`       | Specifies the number of results to return in a single page. See [the section called “Paging”](advanced.md#paging "Paging"). Defaults to 50 if not specified. |✗ |
 
 The response contains JSON or XML encoded descriptions of all models
 that match the query criteria.
 
--   [JSON](javascript:;)
--   [XML](javascript:;)
-
-.
-
 #### Request
 
-~~~~ {.programlisting}
+```shell
 GET /3.6/categories?resultLimit=10&tags=electricity HTTP/1.1
 Accept: application/json
 Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
-~~~~
+```
 
 * * * * *
 
 #### Response
 
-~~~~ {.programlisting}
+```shell
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=UTF-8
-~~~~
+```
 
-~~~~ {.programlisting}
+```json
 {
   "status": "OK",
   "resultsTruncated": true,
@@ -201,108 +195,38 @@ Content-Type: application/json; charset=UTF-8
   ],
   "version": "3.6.0"
 }
-~~~~
+```
 
-.
-
-.
-
-#### Request
-
-~~~~ {.programlisting}
-GET /3.6/categories?resultLimit=10&tags=electricity HTTP/1.1
-Accept: application/xml
-Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
-~~~~
-
-* * * * *
-
-#### Response
-
-~~~~ {.programlisting}
-HTTP/1.1 200 OK
-Content-Type: application/xml; charset=UTF-8
-~~~~
-
-~~~~ {.programlisting}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<Representation>
- <Categories truncated="true">
-  <Category uid="74AFDCA1BDF6">
-   <WikiName>Electricity_China</WikiName>
-  </Category>
-  <Category uid="F9480414FF6F">
-   <WikiName>Electricity_India</WikiName>
-  </Category>
-  <Category uid="RAD15YQ0AIG9">
-   <WikiName>gensets</WikiName>
-  </Category>
-  <Category uid="203657D67A75">
-   <WikiName>Heating_UK_Renewable</WikiName>
-  </Category>
-  <Category uid="30BA55A0C472">
-   <WikiName>Energy</WikiName>
-  </Category>
-  <Category uid="0D3E0524F89D">
-   <WikiName>Energy_in_Ireland</WikiName>
-  </Category>
-  <Category uid="3C03A03B5F3A">
-   <WikiName>Kitchen_generic</WikiName>
-  </Category>
-  <Category uid="94BEXQWWPD94">
-   <WikiName>Diesel_Generator_Sets</WikiName>
-  </Category>
-  <Category uid="Z1G29DRYV4FY">
-   <WikiName>EPA_eGRID_transmission_losses</WikiName>
-  </Category>
-  <Category uid="E297D48B5830">
-   <WikiName>UK_energy</WikiName>
-  </Category>
- </Categories>
- <Status>OK</Status>
- <Version>3.6.0</Version>
-</Representation>
-~~~~
-
-.
 
 ### Get a single model
 
 Fetch information about a particular model.
 
-  -------------------------- -------------------------------------------------------------------------------------
-  URL                        `https://api-stage.amee.com/3.6/categories/{wikiName}[;{matrix_parameters}]`
-  HTTP Method                `GET`
-  Successful Response Code   `200 OK`
-  -------------------------- -------------------------------------------------------------------------------------
+|----------------------------|----------------------------------------------------------------------------|
+| URL                        |`https://api-stage.amee.com/3.6/categories/{wikiName}[;{matrix_parameters}]`|
+| HTTP Method                |`GET`   |
+| Successful Response Code   |`200 OK` |
+
 
 The response contains a JSON or XML encoded description of the model as
 shown below.
 
--   [JSON](javascript:;)
--   [XML](javascript:;)
-
-.
-
 #### Request
 
-~~~~ {.programlisting}
+```shell
 GET /3.6/categories/DEFRA_transport_fuel_methodology HTTP/1.1
 Accept: application/json
 Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
-~~~~
-
-* * * * *
+```
 
 #### Response
 
-~~~~ {.programlisting}
+```shell
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=UTF-8
-~~~~
+```
 
-~~~~ {.programlisting}
+``json
 {
   "category": {
     "uid": "BBAF1A02B8CB",
@@ -311,42 +235,7 @@ Content-Type: application/json; charset=UTF-8
   "status": "OK",
   "version": "3.6.0"
 }
-~~~~
-
-.
-
-.
-
-#### Request
-
-~~~~ {.programlisting}
-GET /3.6/categories/DEFRA_transport_fuel_methodology HTTP/1.1
-Accept: application/xml
-Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
-~~~~
-
-* * * * *
-
-#### Response
-
-~~~~ {.programlisting}
-HTTP/1.1 200 OK
-Content-Type: application/xml; charset=UTF-8
-~~~~
-
-~~~~ {.programlisting}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<Representation>
- <Category uid="BBAF1A02B8CB">
-  <WikiName>DEFRA_transport_fuel_methodology</WikiName>
- </Category>
- <Status>OK</Status>
- <Version>3.6.0</Version>
-</Representation>
-~~~~
-
-.
+```
 
 ### Interactive selection of contexts
 
@@ -393,29 +282,23 @@ have already been chosen.
 The first request has no parameters, so fetches the choices for the
 first context option.
 
--   [JSON](javascript:;)
--   [XML](javascript:;)
-
-.
 
 #### Request
 
-~~~~ {.programlisting}
+```shell
 GET /3.6/categories/Generic_car_transport/drill HTTP/1.1
 Accept: application/json
 Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
-~~~~
-
-* * * * *
+```
 
 #### Response
 
-~~~~ {.programlisting}
+```shell
 HTTP/1.1 200 OK
 Content-Type: application/json; charset=UTF-8
-~~~~
+```
 
-~~~~ {.programlisting}
+```json
 {
   "status": "OK",
   "drill": {
@@ -436,53 +319,9 @@ Content-Type: application/json; charset=UTF-8
   },
   "version": "3.6.0"
 }
-~~~~
+```
 
-.
 
-.
-
-#### Request
-
-~~~~ {.programlisting}
-GET /3.6/categories/Generic_car_transport/drill HTTP/1.1
-Accept: application/xml
-Authorization: Basic dXNlcm5hbWU6cGFzc3dvcmQ=
-~~~~
-
-* * * * *
-
-#### Response
-
-~~~~ {.programlisting}
-HTTP/1.1 200 OK
-Content-Type: application/xml; charset=UTF-8
-~~~~
-
-~~~~ {.programlisting}
-<?xml version="1.0" encoding="ISO-8859-1"?>
-
-<Representation>
- <Drill>
-  <Selections/>
-  <Choices>
-   <Name>fuel</Name>
-   <Values>
-    <Value>petrol</Value>
-    <Value>diesel</Value>
-    <Value>petrol hybrid</Value>
-    <Value>lpg</Value>
-    <Value>cng</Value>
-    <Value>average</Value>
-   </Values>
-  </Choices>
- </Drill>
- <Status>OK</Status>
- <Version>3.6.0</Version>
-</Representation>
-~~~~
-
-.
 
 #### Second Choice
 
