@@ -4,7 +4,7 @@ AMEEconnect Documentation (v3)
 How to get started with ameeConnect
 -----------------------------------
 
-* Sign up for API credentials at [my.amee.com](http://my.amee.com)
+* Sign up for API credentials at [https://www.amee.com/api](https://www.amee.com/api)
 * Find the model for the activity you want to measure (i.e. transport, electricty, manufacturing processes) on [discover.amee.com](http://discover.amee.com)
 * Read over the [quickstart](/sections/quickstart.md) and docs to see how to make requests for the model you're using.
 
