@@ -14,7 +14,7 @@ Getting Started
 ---------------
 
 Before you start, you'll need a free API key, which you can get by
-signing up at [https://my.amee.com/signup](https://my.amee.com/signup).
+signing up at [https://www.amee.com/api](https://www.amee.com/api).
 
 AMEEconnect is a RESTful API, with HTTP requests for all actions, and
 uses standard methods of authentication and response selection. Use
